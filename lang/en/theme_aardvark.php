@@ -39,6 +39,8 @@ Website: <a href="www.newbury-college.ac.uk">Newbury College</a>
 <h3>More information</h3>
 <p><a href="aardvark/README.txt">Change log, licenses and version info</a></p>
 </div></div>';
+$string['activitynavigation']     = 'Show Activity Navigation Bar';
+$string['activitynavigationdesc'] = 'Show activity navigation bar in the bottom of each activity';
 $string['android']                = 'Google Play Store URL';
 $string['androiddesc']            = 'Enter the URL of your Google Play Store Store page. (i.e https://play.google.com/store/apps/developer?id=mycollege)';
 $string['apple']                  = 'Apple App Store URL';

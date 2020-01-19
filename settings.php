@@ -44,6 +44,14 @@ if ($ADMIN->fulltree) {
     $setting->set_updatedcallback('theme_reset_all_caches');
     $settings->add($setting);
 
+    // Show activity navigation.
+    $name        = 'theme_aardvark/activitynavigation';
+    $title       = get_string('activitynavigation', 'theme_aardvark');
+    $description = get_string('activitynavigationdesc', 'theme_aardvark');
+    $setting     = new admin_setting_configcheckbox($name, $title, $description, 0);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $settings->add($setting);
+
     // General Alert setting.
     $name        = 'theme_aardvark/generalalert';
     $title       = get_string('generalalert', 'theme_aardvark');

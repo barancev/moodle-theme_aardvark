@@ -16,6 +16,8 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+$showactivitynavigation = !empty($PAGE->theme->settings->activitynavigation);
+
 // Get the HTML for the settings bits.
 $html = theme_aardvark_get_html_for_settings($OUTPUT, $PAGE);
 
@@ -43,6 +45,9 @@ echo $OUTPUT->doctype() ?>
                     <?php
                     echo $OUTPUT->course_content_header();
                     echo $OUTPUT->main_content();
+                    if ($showactivitynavigation) {
+                        echo $OUTPUT->activity_navigation();
+                    }
                     echo $OUTPUT->course_content_footer();
                     ?>
                 </section>
