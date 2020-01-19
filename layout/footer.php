@@ -46,7 +46,7 @@ $haswikipedia = (!empty($PAGE->theme->settings->wikipedia));
             echo $OUTPUT->login_info();			
 			echo $OUTPUT->standard_footer_html();
 			?><p class="helplink"><?php echo page_doc_link(get_string('moodledocslink')); ?></p><?php
-            if ($hasceop) {?><p><a href="<?php echo $PAGE->theme->settings->ceop;?> "><img src="<?php echo $OUTPUT->pix_url('ceopreport', 'theme')?>" /></a></p><?php }?>
+            if ($hasceop) {?><p><a href="<?php echo $PAGE->theme->settings->ceop;?> "><img src="<?php echo $OUTPUT->image_url('ceopreport', 'theme')?>" /></a></p><?php }?>
 			<?php if ($hascustomfooter) {echo $PAGE->theme->settings->customfooter;} else {}?>
         		</div>
         	</div>

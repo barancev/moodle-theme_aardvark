@@ -19,7 +19,7 @@
 <head>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
-	<link rel="apple-touch-icon-precomposed" href="<?php echo $OUTPUT->pix_url('apple-touch-icon', 'theme')?>" />
+	<link rel="apple-touch-icon-precomposed" href="<?php echo $OUTPUT->image_url('apple-touch-icon', 'theme')?>" />
 	<?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Fonts -->
